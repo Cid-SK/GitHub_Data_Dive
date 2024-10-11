@@ -7,7 +7,7 @@ import pymysql
 
 # Create an SQLAlchemy engine
 db_user = 'root'
-db_password = 'sk23'
+db_password = 'xxxx'
 db_host = 'localhost'
 db_port = '3306'  
 db_name = 'github'
