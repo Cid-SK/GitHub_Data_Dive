@@ -2,24 +2,26 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 from streamlit_option_menu import option_menu
-from sqlalchemy import create_engine
-import pymysql
+# from sqlalchemy import create_engine
+# import pymysql
 
 # Create an SQLAlchemy engine
-db_user = 'root'
-db_password = 'xxxx'
-db_host = 'localhost'
-db_port = '3306'  
-db_name = 'github'
+# db_user = 'root'
+# db_password = 'xxxx'
+# db_host = 'localhost'
+# db_port = '3306'  
+# db_name = 'github'
 
-# Establish a connection to the database
-engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}')
+# # Establish a connection to the database
+# engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}')
 
-# SQL query to fetch data
-query = 'SELECT * FROM repository'
+# # SQL query to fetch data
+# query = 'SELECT * FROM repository'
 
-# Read data into a DataFrame using the SQLAlchemy engine
-df = pd.read_sql(query, engine)
+# # Read data into a DataFrame using the SQLAlchemy engine
+# df = pd.read_sql(query, engine)
+
+df = pd.read_csv("github_repositories_data.csv")
 
 # Extract year from 'creation_date'
 df['year'] = pd.to_datetime(df['creation_date']).dt.year  # Ensure 'creation_date' is in datetime format
