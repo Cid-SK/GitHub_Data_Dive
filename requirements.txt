@@ -1,0 +1,4 @@
+pandas
+plotly
+streamlit==1.34.0
+streamlit-option-menu
