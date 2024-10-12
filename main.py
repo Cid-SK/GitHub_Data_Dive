@@ -78,7 +78,7 @@ elif selected_menu == "Analysis":
                     language_count,
                     names='programming_language',
                     values='count',
-                    hole=0.4,
+                    hole=0.5,
                     title='Programming Language Distribution',
                     width=600,
                     color_discrete_sequence=px.colors.qualitative.Pastel
@@ -195,7 +195,7 @@ elif selected_menu == "Analysis":
                                             title='Top 10 Programming Languages', 
                                             color_discrete_sequence=px.colors.qualitative.Pastel,
                                             width=600,
-                                            hole=0.4)
+                                            hole=0.5)
                 st.plotly_chart(fig_top_languages)
 
             with col2:
@@ -208,7 +208,7 @@ elif selected_menu == "Analysis":
                     license_count_topic,
                     names='license_type',
                     values='count',
-                    hole=0.4,
+                    hole=0.5,
                     title='License Distribution for Repositories for Selected Topic',
                     width=600,
                     color_discrete_sequence=px.colors.qualitative.Pastel
@@ -273,7 +273,7 @@ elif selected_menu == "Analysis":
                                             values='count', 
                                             title=f'Programming Language Usage in {selected_year}',
                                             width=600,
-                                            hole=0.4,
+                                            hole=0.5,
                                             color_discrete_sequence=px.colors.qualitative.Pastel)
                 st.plotly_chart(fig_language_usage)
 
@@ -287,7 +287,7 @@ elif selected_menu == "Analysis":
                     license_count,
                     names='license_type',
                     values='count',
-                    hole=0.4,  # Creates the donut shape
+                    hole=0.5,  # Creates the donut shape
                     title=f'License Distribution for Repositories in {selected_year}',
                     width=600,
                     color_discrete_sequence=px.colors.qualitative.Pastel  # Customize colors for better visualization
