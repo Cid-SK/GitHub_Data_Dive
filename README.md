@@ -41,7 +41,7 @@ The **GitHub Data Dive** application focuses on trending areas like machine lear
 - **Educators and Researchers**: Find useful projects for teaching or research purposes.
 
 ## Deployment
-The web application is deployed on Render, making it easily accessible to users interested in exploring GitHub's open-source ecosystem. You can access the live app [here](https://your-app-url.render.com).
+The web application is deployed on Render, making it easily accessible to users interested in exploring GitHub's open-source ecosystem. You can access the live app [here](https://github-data-dive-mgmq.onrender.com).
 
 ## Contributing
 Contributions are welcome! If you have suggestions or improvements, please submit a pull request or open an issue.
