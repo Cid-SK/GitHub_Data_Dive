@@ -24,7 +24,7 @@ from streamlit_option_menu import option_menu
 df = pd.read_csv("github_repositories_dataset.csv")
 
 # Extract year from 'creation_date'
-df['year'] = pd.to_datetime(df['creation_date']).dt.year  # Ensure 'creation_date' is in datetime format
+df['year'] = pd.to_datetime(df['creation_date']).dt.year 
 
 # Set up Streamlit page configuration
 st.set_page_config(page_title="GitHub Data Dive", layout="wide")  
