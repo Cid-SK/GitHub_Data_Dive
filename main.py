@@ -21,7 +21,7 @@ from streamlit_option_menu import option_menu
 # # Read data into a DataFrame using the SQLAlchemy engine
 # df = pd.read_sql(query, engine)
 
-df = pd.read_csv("github_repositories_data.csv")
+df = pd.read_csv("github_repositories_dataset.csv")
 
 # Extract year from 'creation_date'
 df['year'] = pd.to_datetime(df['creation_date']).dt.year  # Ensure 'creation_date' is in datetime format
